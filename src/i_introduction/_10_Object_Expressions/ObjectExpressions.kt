@@ -18,6 +18,6 @@ fun todoTask10(): Nothing = TODO(
 
 fun task10(): List<Int> {
     val arrayList = arrayListOf(1, 5, 2)
-    Collections.sort(arrayList, todoTask10())
+    Collections.sort(arrayList, kotlin.Comparator { o1, o2 -> o2.compareTo(o1) })
     return arrayList
 }
